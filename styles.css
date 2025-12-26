@@ -35,6 +35,12 @@ a {
   padding: 32px 7vw 120px;
 }
 
+.page-hero {
+  background: linear-gradient(135deg, rgba(11, 61, 145, 0.95), rgba(3, 11, 31, 0.95));
+  color: #fff;
+  padding: 32px 7vw 96px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -109,6 +115,17 @@ a {
   background: transparent;
   border-color: rgba(255, 255, 255, 0.5);
   color: #fff;
+}
+
+.link-inline {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.divider {
+  text-align: center;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 .button:hover {

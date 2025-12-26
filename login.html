@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login | Industrial Cybersecurity Training</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-hero">
+      <nav class="nav">
+        <div class="brand">Industrial Cybersecurity Training</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="admin-login.html">Admin login</a></li>
+          <li><a href="student-portal.html">Student portal</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Student access</p>
+        <h1>Sign in to your training portal</h1>
+        <p class="subtitle">
+          Choose Gmail SSO or create a dedicated portal account.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="portal-grid">
+          <div class="card">
+            <h2>Continue with Gmail</h2>
+            <p class="form-note">
+              Use your Google Workspace account to continue with single sign-on.
+            </p>
+            <button class="button primary" type="button">Sign in with Google</button>
+            <p class="form-note">SSO integration placeholder.</p>
+          </div>
+
+          <form class="card" aria-label="Create or sign in">
+            <h2>Create an account</h2>
+            <label>
+              Full name
+              <input type="text" name="full-name" placeholder="Alex Rivera" />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="student-email" placeholder="student@company.com" />
+            </label>
+            <label>
+              Password
+              <input type="password" name="student-password" />
+            </label>
+            <button class="button primary" type="submit">Create account</button>
+            <div class="divider">or</div>
+            <h3>Already have an account?</h3>
+            <label>
+              Email address
+              <input type="email" name="login-email" placeholder="student@company.com" />
+            </label>
+            <label>
+              Password
+              <input type="password" name="login-password" />
+            </label>
+            <a class="button ghost" href="student-portal.html">Log in</a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

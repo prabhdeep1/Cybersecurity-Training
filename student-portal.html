@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal | Industrial Cybersecurity Training</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-hero">
+      <nav class="nav">
+        <div class="brand">Industrial Cybersecurity Training</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Student login</a></li>
+          <li><a href="admin-login.html">Admin login</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Student portal</p>
+        <h1>Upload proof of work and ask questions</h1>
+        <p class="subtitle">
+          Submit lab evidence, track progress, and reach instructors from one place.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="portal-grid">
+          <form class="card" aria-label="Upload proof of work">
+            <h2>Upload proof of work</h2>
+            <label>
+              Course module
+              <select name="module">
+                <option>Foundations of Industrial Security</option>
+                <option>Hands-on SOC for ICS</option>
+                <option>Red Teaming Industrial Systems</option>
+              </select>
+            </label>
+            <label>
+              Evidence description
+              <textarea
+                name="description"
+                rows="4"
+                placeholder="Summarize the lab results or evidence you are submitting."
+              ></textarea>
+            </label>
+            <label>
+              Upload file
+              <input type="file" name="proof" />
+            </label>
+            <button class="button primary" type="submit">Submit proof</button>
+          </form>
+
+          <form class="card" aria-label="Submit a question">
+            <h2>Ask an instructor</h2>
+            <label>
+              Topic
+              <input type="text" name="topic" placeholder="Example: PLC traffic analysis" />
+            </label>
+            <label>
+              Question
+              <textarea
+                name="question"
+                rows="5"
+                placeholder="Type your question for the instructor."
+              ></textarea>
+            </label>
+            <button class="button primary" type="submit">Send question</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
