@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Cybersecurity Training</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">Industrial Cybersecurity Training</div>
+        <ul class="nav-links">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#portal">Student Portal</a></li>
+          <li><a href="#qa">Q&amp;A</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Hands-on. Industrial. Mission-ready.</p>
+        <h1>Cybersecurity training for industrial teams</h1>
+        <p class="subtitle">
+          Build real-world skills with immersive labs, instructor-led sessions, and
+          proof-of-work submissions for every module.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#courses">Explore courses</a>
+          <a class="button ghost" href="#portal">Student portal</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="courses" class="section">
+        <div class="section-header">
+          <h2>Course catalog</h2>
+          <p>
+            Curated pathways for OT/ICS defenders, industrial engineers, and security
+            leaders.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Foundations of Industrial Security</h3>
+            <ul>
+              <li>Threat modeling for OT environments</li>
+              <li>Network segmentation &amp; zoning</li>
+              <li>Incident response playbooks</li>
+            </ul>
+            <span class="tag">Beginner</span>
+          </article>
+          <article class="card">
+            <h3>Hands-on SOC for ICS</h3>
+            <ul>
+              <li>Detection engineering for PLC traffic</li>
+              <li>SIEM and OT telemetry tuning</li>
+              <li>Live breach simulations</li>
+            </ul>
+            <span class="tag">Intermediate</span>
+          </article>
+          <article class="card">
+            <h3>Red Teaming Industrial Systems</h3>
+            <ul>
+              <li>Adversary emulation in labs</li>
+              <li>Physical + cyber attack chains</li>
+              <li>Safety-first exploitation workflows</li>
+            </ul>
+            <span class="tag">Advanced</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="portal" class="section alt">
+        <div class="section-header">
+          <h2>Student portal</h2>
+          <p>
+            Upload your proof of work, track your progress, and request instructor
+            feedback.
+          </p>
+        </div>
+        <div class="portal-grid">
+          <form class="card" aria-label="Upload proof of work">
+            <h3>Proof of work upload</h3>
+            <label>
+              Course module
+              <select name="module">
+                <option>Foundations of Industrial Security</option>
+                <option>Hands-on SOC for ICS</option>
+                <option>Red Teaming Industrial Systems</option>
+              </select>
+            </label>
+            <label>
+              Evidence description
+              <textarea
+                name="description"
+                rows="4"
+                placeholder="Summarize the lab results or evidence you are submitting."
+              ></textarea>
+            </label>
+            <label>
+              Upload file
+              <input type="file" name="proof" />
+            </label>
+            <button class="button primary" type="submit">Submit proof</button>
+          </form>
+
+          <div class="card">
+            <h3>Progress snapshot</h3>
+            <ul class="progress-list">
+              <li>
+                <span>Completed labs</span>
+                <strong>12 / 18</strong>
+              </li>
+              <li>
+                <span>Pending reviews</span>
+                <strong>3</strong>
+              </li>
+              <li>
+                <span>Next live session</span>
+                <strong>Thursday, 14:00</strong>
+              </li>
+            </ul>
+            <div class="alert">
+              Upload a new proof-of-work file to unlock your next lab.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="qa" class="section">
+        <div class="section-header">
+          <h2>Instructor Q&amp;A</h2>
+          <p>
+            Ask questions in-context and get responses tied to the lab exercises.
+          </p>
+        </div>
+        <div class="card-grid">
+          <form class="card" aria-label="Submit a question">
+            <h3>Submit a question</h3>
+            <label>
+              Topic
+              <input type="text" name="topic" placeholder="Example: PLC traffic analysis" />
+            </label>
+            <label>
+              Question
+              <textarea
+                name="question"
+                rows="5"
+                placeholder="Type your question for the instructor."
+              ></textarea>
+            </label>
+            <button class="button primary" type="submit">Send question</button>
+          </form>
+          <div class="card">
+            <h3>Recent answers</h3>
+            <div class="qa-item">
+              <p class="qa-question">How do I validate network segmentation in the lab?</p>
+              <p class="qa-answer">
+                Use the provided OT firewall policy checklist and submit packet captures
+                showing allowed traffic only.
+              </p>
+            </div>
+            <div class="qa-item">
+              <p class="qa-question">What proof is required for the breach simulation?</p>
+              <p class="qa-answer">
+                Include your incident timeline, containment actions, and screenshots of
+                alerts triggered in the SIEM.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div>
+        <h3>Ready to train your team?</h3>
+        <p>Reach out to schedule on-site or virtual cohorts.</p>
+      </div>
+      <div class="contact">
+        <p>Email: training@industrialcyber.example</p>
+        <p>Phone: +1 (555) 010-4200</p>
+      </div>
+    </footer>
+  </body>
+</html>
