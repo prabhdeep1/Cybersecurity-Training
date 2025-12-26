@@ -1,159 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salford & Co. | Cyber Security</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="content-loader.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salford & Co. | Cyber Security</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700&display=swap"
-    rel="stylesheet" />
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <script src="content-loader.js" defer></script>
-</head>
+  <body>
+    <header class="navbar">
+      <div class="brand"><span class="brand-icon">🛡️</span> SALFORD & CO.</div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#client-login" class="cta">LOGIN</a></li>
+      </ul>
+    </header>
 
-<body>
-  <header class="navbar">
-    <div class="brand"><span class="brand-icon">🛡️</span> SALFORD & CO.</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#client-login" class="cta">LOGIN</a></li>
-    </ul>
-  </header>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>CYBER<br />SECURITY</h1>
-      <span class="highlight">PROTECTING YOUR DIGITAL WORLD</span>
-      <p>Lorem ipsum odor sit amet, consectetuer adipiscing elit. Malesuada
-        donec cursus ac posuere elementum.</p>
-      <div class="hero-cta-wrapper">
-        <a href="#client-login" class="hero-cta">GET STARTED →</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <img src="CyberSecurityIllustration.svg" alt="Cyber Security" />
-    </div>
-  </section>
-
-  <section id="why-choose-us">
-    <div class="section-header">
-      <h2>WHY CHOOSE US</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <h3>PROVEN EXPERTISE</h3>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>CYBER<br />SECURITY</h1>
+        <span class="highlight">PROTECTING YOUR DIGITAL WORLD</span>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          quis nunc id ante laoreet laoreet at ut purus.
+          Lorem ipsum odor sit amet, consectetuer adipiscing elit. Malesuada
+          donec cursus ac posuere elementum.
         </p>
+        <div class="hero-cta-wrapper">
+          <a href="#client-login" class="hero-cta">GET STARTED →</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>CLIENT-FOCUSED APPROACH</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          quis nunc id ante laoreet laoreet at ut purus.
-        </p>
+      <div class="hero-visual">
+        <img src="CyberSecurityIllustration.svg" alt="Cyber Security" />
       </div>
-      <div class="card">
-        <h3>CUTTING-EDGE TOOLS</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          quis nunc id ante laoreet laoreet at ut purus.
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about">
-    <div class="split-section">
-      <div class="about-content">
-        <img src="aboutus.svg" alt="About Us" />
-        <h2>WHO WE ARE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          quis nunc id ante laoreet laoreet at ut purus.</p>
+    <section id="why-choose-us">
+      <div class="section-header">
+        <h2>WHY CHOOSE US</h2>
       </div>
-      <div class="about-cards">
+      <div class="card-grid">
         <div class="card">
-          <h3>OUR MISSION</h3>
+          <h3>PROVEN EXPERTISE</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis nunc id ante laoreet laoreet at ut purus.
           </p>
         </div>
         <div class="card">
-          <h3>OUR VISION</h3>
+          <h3>CLIENT-FOCUSED APPROACH</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis nunc id ante laoreet laoreet at ut purus.
+          </p>
+        </div>
+        <div class="card">
+          <h3>CUTTING-EDGE TOOLS</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis nunc id ante laoreet laoreet at ut purus.
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="services">
-    <div class="split-section">
-      <div class="services-cards">
-        <div class="service-card">
-          <h3 class="text-gold">COMPREHENSIVE SERVICES</h3>
+    <section id="about">
+      <div class="split-section">
+        <div class="about-header">
+          <h2>WHO WE ARE</h2>
+          <img src="aboutus.svg" alt="About Us" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             quis nunc id ante laoreet laoreet at ut purus.
           </p>
         </div>
-        <div class="service-card">
-          <h3 class="text-gold">CUSTOM SOLUTIONS</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            quis nunc id ante laoreet laoreet at ut purus.
-          </p>
+        <div class="about-cards">
+          <div class="card">
+            <h3>OUR MISSION</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
+          </div>
+          <div class="card">
+            <h3>OUR VISION</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
+          </div>
         </div>
       </div>
-      <div>
-        <h2 class="services-title">WHAT WE OFFER</h2>
-        <img src="services.svg" alt="Services" class="services-image" />
+    </section>
+
+    <section id="services">
+      <div class="split-section">
+        <div class="services-header">
+          <h2 class="services-title">WHAT WE OFFER</h2>
+          <img src="services.svg" alt="Services" class="services-image" />
+        </div>
+        <div class="services-cards">
+          <div class="service-card">
+            <h3 class="text-gold">COMPREHENSIVE SERVICES</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3 class="text-gold">CUSTOM SOLUTIONS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <footer>
+      <p>&copy; 2025 Salford & Co. All rights reserved.</p>
+    </footer>
 
+    <script>
+      function handleClientLogin(response) {
+        // Decode the JWT to get user info
+        const responsePayload = decodeJwtResponse(response.credential);
 
-  <footer>
-    <p>&copy; 2025 Salford & Co. All rights reserved.</p>
-  </footer>
+        const feedback = document.getElementById("login-feedback");
+        feedback.textContent = `Welcome back, ${responsePayload.name}! Redirecting to dashboard...`;
 
-  <script>
-    function handleClientLogin(response) {
-      // Decode the JWT to get user info
-      const responsePayload = decodeJwtResponse(response.credential);
+        console.log("Logged in user:", responsePayload);
+      }
 
-      const feedback = document.getElementById("login-feedback");
-      feedback.textContent = `Welcome back, ${responsePayload.name}! Redirecting to dashboard...`;
+      function decodeJwtResponse(token) {
+        var base64Url = token.split(".")[1];
+        var base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+        var jsonPayload = decodeURIComponent(
+          window
+            .atob(base64)
+            .split("")
+            .map(function (c) {
+              return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+            })
+            .join("")
+        );
 
-      console.log("Logged in user:", responsePayload);
-    }
+        return JSON.parse(jsonPayload);
+      }
 
-    function decodeJwtResponse(token) {
-      var base64Url = token.split(".")[1];
-      var base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
-      var jsonPayload = decodeURIComponent(
-        window
-          .atob(base64)
-          .split("")
-          .map(function (c) {
-            return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
-          })
-          .join("")
-      );
+      // Mobile menu toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
 
-      return JSON.parse(jsonPayload);
-    }
-  </script>
-</body>
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            this.textContent = navLinks.classList.contains("active")
+              ? "✕"
+              : "☰";
+          });
 
+          // Close menu when clicking on a link
+          navLinks.addEventListener("click", function (e) {
+            if (e.target.tagName === "A") {
+              navLinks.classList.remove("active");
+              menuToggle.textContent = "☰";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
