@@ -1,301 +1,348 @@
+/* ============================================
+   COLOR SYSTEM - Control all app colors here
+   ============================================ */
 :root {
-  color-scheme: light;
-  --primary: #0b3d91;
-  --accent: #00b4d8;
-  --dark: #0a0f1f;
-  --light: #f5f7fb;
-  --text: #1c2230;
-  --muted: #5a677a;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+    /* Base Colors */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    
+    /* Gray Scale */
+    --color-gray-100: #ffffff;
+    --color-gray-200: #e0e0e0;
+    --color-gray-300: #cccccc;
+    --color-gray-400: #a0a0a0;
+    --color-gray-500: #808080;
+    --color-gray-600: #666666;
+    --color-gray-700: #4d4d4d;
+    --color-gray-800: #333333;
+    --color-gray-900: #1a1a1a;
+    --color-gray-950: #0a0a0a;
+    
+    /* Theme Colors */
+    --bg-deep-blue: var(--color-black);
+    --bg-card-blue: var(--color-gray-900);
+    --accent-gold: var(--color-gray-300);
+    --text-white: var(--color-white);
+    --text-gray: var(--color-gray-400);
+    
+    /* SVG Colors - Control SVG fill/stroke colors */
+    --svg-primary: var(--color-gray-300);
+    --svg-secondary: var(--color-gray-400);
+    --svg-accent: var(--color-gray-200);
+    --svg-background: var(--color-black);
+    --svg-border: var(--color-gray-800);
+    
+    /* SVG Filter Controls - Adjust these to change SVG appearance */
+    /* brightness: 0-1 (lower = darker, higher = lighter) */
+    --svg-filter-brightness: 0.85;
+    /* invert: 0-100% (controls color inversion for grayscale effect) */
+    --svg-filter-invert: 85%;
+    /* opacity: 0-1 (controls transparency) */
+    --svg-filter-opacity: 0.8;
+    
+    /* Typography */
+    --font-main: 'Inter', system-ui, sans-serif;
+    --font-display: 'Oswald', 'Impact', sans-serif;
+    
+    /* Spacing (1rem = 16px) */
+    --spacing-xs: 0.5rem;    /* 8px */
+    --spacing-sm: 0.75rem;   /* 12px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-2xl: 3rem;     /* 48px */
+    --spacing-3xl: 4rem;     /* 64px */
+    --spacing-4xl: 6rem;     /* 96px */
+    --spacing-5xl: 8rem;     /* 128px */
+    
+    /* Border Radius */
+    --radius-sm: 0.5rem;     /* 8px */
+    --radius-md: 0.75rem;    /* 12px */
+    --radius-lg: 1.25rem;    /* 20px */
+    --radius-full: 3.125rem;  /* 50px */
 }
 
+/* ============================================
+   SVG COLOR CONTROL
+   ============================================ */
+/* 
+   SVG Color Control System:
+   All SVG color controls are defined in :root above.
+   - Adjust --svg-filter-brightness to control lightness (0-1)
+   - Adjust --svg-filter-invert to control inversion (0-100%)
+   - Adjust --svg-filter-opacity to control transparency (0-1)
+   
+   Example: To make SVGs darker gray, reduce --svg-filter-brightness
+   Example: To make SVGs lighter, increase --svg-filter-brightness
+*/
+
+/* Apply filters to control SVG colors */
+img[src$=".svg"] {
+    filter: brightness(var(--svg-filter-brightness)) saturate(100%) invert(var(--svg-filter-invert)) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    opacity: var(--svg-filter-opacity);
+}
+
+/* SVG wrapper for color control */
+.svg-wrapper {
+    display: inline-block;
+}
+
+.svg-wrapper img[src$=".svg"] {
+    filter: brightness(var(--svg-filter-brightness)) saturate(100%) invert(var(--svg-filter-invert)) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    opacity: var(--svg-filter-opacity);
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Base: 1rem = 16px */
 }
 
 body {
-  background: var(--light);
-  color: var(--text);
-  line-height: 1.6;
+    background-color: var(--bg-deep-blue);
+    color: var(--text-white);
+    font-family: var(--font-main);
+    line-height: 1.6;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1,
+h2,
+h3,
+.brand {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-.hero {
-  background: linear-gradient(135deg, rgba(11, 61, 145, 0.95), rgba(3, 11, 31, 0.95)),
-    url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1350&q=80")
-      center/cover;
-  color: #fff;
-  padding: 32px 7vw 120px;
-}
-
-.page-hero {
-  background: linear-gradient(135deg, rgba(11, 61, 145, 0.95), rgba(3, 11, 31, 0.95));
-  color: #fff;
-  padding: 32px 7vw 96px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 80px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-  font-weight: 500;
-}
-
-.nav-links a {
-  opacity: 0.9;
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg) var(--spacing-3xl);
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
 
 .brand {
-  font-weight: 700;
-  font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--text-white);
 }
 
-.hero-content {
-  max-width: 640px;
+.brand-icon {
+    color: var(--accent-gold);
 }
 
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
-  margin-bottom: 16px;
-  opacity: 0.8;
+.nav-links {
+    display: flex;
+    gap: var(--spacing-2xl);
+    list-style: none;
 }
 
-.hero h1 {
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
-  line-height: 1.1;
-  margin-bottom: 20px;
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
-.subtitle {
-  font-size: 1.1rem;
-  margin-bottom: 32px;
-  color: rgba(255, 255, 255, 0.85);
+.nav-links a.cta {
+    color: var(--accent-gold);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    padding: var(--spacing-5xl) var(--spacing-3xl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-weight: 600;
-  border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.hero-text h1 {
+    font-size: 6rem;
+    line-height: 0.9;
+    margin-bottom: var(--spacing-md);
 }
 
-.button.primary {
-  background: var(--accent);
-  color: var(--dark);
+.hero-text .highlight {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    display: block;
+    margin-top: var(--spacing-md);
 }
 
-.button.ghost {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.5);
-  color: #fff;
+.hero-visual img {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+    opacity: 0.8;
 }
 
-.link-inline {
-  color: var(--primary);
-  font-weight: 600;
-}
-
-.divider {
-  text-align: center;
-  font-weight: 600;
-  color: var(--muted);
-}
-
-.button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
-}
-
-.section {
-  padding: 80px 7vw;
-}
-
-.section.alt {
-  background: #fff;
+/* ============================================
+   SECTIONS
+   ============================================ */
+section {
+    padding: var(--spacing-4xl) var(--spacing-3xl);
 }
 
 .section-header {
-  max-width: 600px;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .section-header h2 {
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  margin-bottom: 12px;
+    font-size: 4rem;
+    color: var(--text-white);
 }
 
-.section-header p {
-  color: var(--muted);
+.services-title {
+    font-size: 3rem;
+    text-align: right;
 }
 
+/* ============================================
+   CARDS
+   ============================================ */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-}
-
-.portal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: var(--spacing-xl);
 }
 
 .card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+    background-color: var(--bg-card-blue);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-md);
+    color: var(--text-white);
+    transition: transform 0.2s;
 }
 
-.form-note {
-  font-size: 0.9rem;
-  color: var(--muted);
+.card:hover {
+    transform: translateY(-0.3125rem);
 }
 
-.status {
-  font-weight: 600;
-  color: var(--primary);
+.card h3 {
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
 }
 
-.status.error {
-  color: #c2410c;
+.card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
 }
 
-.is-hidden {
-  display: none;
+/* ============================================
+   SPLIT SECTION
+   ============================================ */
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
 }
 
-.card ul {
-  list-style: none;
-  display: grid;
-  gap: 8px;
+.split-section img {
+    width: 100%;
+    border-radius: var(--radius-md);
 }
 
-.tag {
-  align-self: flex-start;
-  padding: 6px 14px;
-  background: rgba(0, 180, 216, 0.1);
-  color: var(--primary);
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
 
-label {
-  display: grid;
-  gap: 8px;
-  font-weight: 600;
-  color: var(--text);
+/* ============================================
+   HERO TEXT & BUTTON
+   ============================================ */
+.hero-text p {
+    margin-top: var(--spacing-xl);
+    max-width: 31.25rem;
+    color: var(--text-gray);
 }
 
-input,
-textarea,
-select {
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid #d7dde8;
-  font-size: 0.95rem;
-  font-family: inherit;
+.hero-cta-wrapper {
+    margin-top: var(--spacing-2xl);
 }
 
-.progress-list {
-  list-style: none;
-  display: grid;
-  gap: 12px;
+.hero-cta {
+    background: var(--accent-gold);
+    color: var(--color-black);
+    padding: var(--spacing-md) var(--spacing-xl);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    display: inline-block;
 }
 
-.progress-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+.about-content h2 {
+    font-size: 3rem;
+    margin-top: var(--spacing-xl);
 }
 
-.alert {
-  background: rgba(11, 61, 145, 0.08);
-  padding: 14px;
-  border-radius: 12px;
-  color: var(--primary);
-  font-weight: 600;
+.about-content p {
+    margin-top: var(--spacing-md);
 }
 
-.qa-item {
-  padding: 14px 0;
-  border-bottom: 1px solid #e6ebf5;
-}
-
-.qa-item:last-child {
-  border-bottom: none;
-}
-
-.qa-question {
-  font-weight: 700;
-}
-
-.qa-answer {
-  color: var(--muted);
-  margin-top: 6px;
-}
-
-.footer {
-  background: var(--dark);
-  color: #fff;
-  padding: 60px 7vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: space-between;
-}
-
-.footer p {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.contact {
-  text-align: right;
-}
-
-@media (max-width: 720px) {
-  .nav {
+.about-cards {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
+    gap: var(--spacing-xl);
+}
 
-  .nav-links {
-    flex-wrap: wrap;
-  }
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
 
-  .contact {
-    text-align: left;
-  }
+.service-card {
+    border: 0.125rem solid var(--bg-card-blue);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-md);
+}
+
+.services-image {
+    width: 100%;
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-xl);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-gold {
+    color: var(--accent-gold);
 }
