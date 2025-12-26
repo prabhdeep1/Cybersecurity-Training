@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Salford & Co. | Cyber Security",
+    "brandIcon": "🛡️"
+  },
+  "navigation": {
+    "brandName": "Prabhdeep Singh CO.",
+    "links": [
+      {
+        "text": "Home",
+        "href": "#"
+      },
+      {
+        "text": "About Us",
+        "href": "#about"
+      },
+      {
+        "text": "Services",
+        "href": "#services"
+      },
+      {
+        "text": "LOGIN",
+        "href": "#client-login",
+        "isCta": true
+      }
+    ]
+  },
+  "hero": {
+    "title": "CYBER\nSECURITY",
+    "highlight": "PROTECTING YOUR DIGITAL WORLD",
+    "description": "Lorem ipsum odor sit amet, consectetuer adipiscing elit. Malesuada donec cursus ac posuere elementum.",
+    "ctaText": "GET STARTED →",
+    "ctaLink": "#client-login"
+  },
+  "whyChooseUs": {
+    "title": "WHY CHOOSE US",
+    "cards": [
+      {
+        "title": "PROVEN EXPERTISE",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+      },
+      {
+        "title": "CLIENT-FOCUSED APPROACH",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+      },
+      {
+        "title": "CUTTING-EDGE TOOLS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+      }
+    ]
+  },
+  "about": {
+    "title": "WHO WE ARE",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus.",
+    "mission": {
+      "title": "OUR MISSION",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+    },
+    "vision": {
+      "title": "OUR VISION",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+    }
+  },
+  "services": {
+    "title": "WHAT WE OFFER",
+    "cards": [
+      {
+        "title": "COMPREHENSIVE SERVICES",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+      },
+      {
+        "title": "CUSTOM SOLUTIONS",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nunc id ante laoreet laoreet at ut purus."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Salford & Co. All rights reserved."
+  }
+}

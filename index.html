@@ -3,349 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Industrial Cybersecurity Training</title>
+    <title>Salford & Co. | Cyber Security</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="content-loader.js" defer></script>
   </head>
+
   <body>
-    <header class="hero">
-      <nav class="nav">
-        <div class="brand">Industrial Cybersecurity Training</div>
-        <ul class="nav-links">
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="admin-login.html">Admin login</a></li>
-          <li><a href="login.html">Student login</a></li>
-          <li><a href="#portal">Student Portal</a></li>
-          <li><a href="#qa" title="Student Q&A">Student Q&amp;A</a></li>
-          <li><a href="#public-qa" title="Public Q&A">Public Q&amp;A</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hero-content">
-        <p class="eyebrow">Hands-on. Industrial. Mission-ready.</p>
-        <h1>Cybersecurity training for industrial teams</h1>
-        <p class="subtitle">
-          Build real-world skills with immersive labs, instructor-led sessions, and
-          proof-of-work submissions for every module.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#courses">Explore courses</a>
-          <a class="button ghost" href="login.html">Student login</a>
-        </div>
-      </div>
+    <header class="navbar">
+      <div class="brand"><span class="brand-icon">🛡️</span> SALFORD & CO.</div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#client-login" class="cta">LOGIN</a></li>
+      </ul>
     </header>
 
-    <main>
-      <section id="courses" class="section">
-        <div class="section-header">
-          <h2>Course catalog</h2>
-          <p>
-            Curated pathways for OT/ICS defenders, industrial engineers, and security
-            leaders.
-          </p>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>CYBER<br />SECURITY</h1>
+        <span class="highlight">PROTECTING YOUR DIGITAL WORLD</span>
+        <p>
+          Lorem ipsum odor sit amet, consectetuer adipiscing elit. Malesuada
+          donec cursus ac posuere elementum.
+        </p>
+        <div class="hero-cta-wrapper">
+          <a href="#client-login" class="hero-cta">GET STARTED →</a>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Foundations of Industrial Security</h3>
-            <ul>
-              <li>Threat modeling for OT environments</li>
-              <li>Network segmentation &amp; zoning</li>
-              <li>Incident response playbooks</li>
-            </ul>
-            <span class="tag">Beginner</span>
-          </article>
-          <article class="card">
-            <h3>Hands-on SOC for ICS</h3>
-            <ul>
-              <li>Detection engineering for PLC traffic</li>
-              <li>SIEM and OT telemetry tuning</li>
-              <li>Live breach simulations</li>
-            </ul>
-            <span class="tag">Intermediate</span>
-          </article>
-          <article class="card">
-            <h3>Red Teaming Industrial Systems</h3>
-            <ul>
-              <li>Adversary emulation in labs</li>
-              <li>Physical + cyber attack chains</li>
-              <li>Safety-first exploitation workflows</li>
-            </ul>
-            <span class="tag">Advanced</span>
-          </article>
-        </div>
-      </section>
+      </div>
+      <div class="hero-visual">
+        <img src="CyberSecurityIllustration.svg" alt="Cyber Security" />
+      </div>
+    </section>
 
-      <section id="login" class="section">
-        <div class="section-header">
-          <h2>Login portal</h2>
+    <section id="why-choose-us">
+      <div class="section-header">
+        <h2>WHY CHOOSE US</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>PROVEN EXPERTISE</h3>
           <p>
-            Admins can create student credentials, and learners can log in to access
-            the student portal and private Q&amp;A.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis nunc id ante laoreet laoreet at ut purus.
           </p>
         </div>
-        <div class="portal-grid">
-          <form class="card" id="admin-setup" aria-label="Admin user setup">
-            <h3>Admin: create student credentials</h3>
-            <label>
-              Student username
-              <input type="text" name="admin-username" placeholder="e.g. student01" required />
-            </label>
-            <label>
-              Temporary password
-              <input type="password" name="admin-password" required />
-            </label>
-            <button class="button primary" type="submit">Create credentials</button>
-            <p class="form-note">
-              Credentials are stored locally in the browser for demo purposes.
+        <div class="card">
+          <h3>CLIENT-FOCUSED APPROACH</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis nunc id ante laoreet laoreet at ut purus.
+          </p>
+        </div>
+        <div class="card">
+          <h3>CUTTING-EDGE TOOLS</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis nunc id ante laoreet laoreet at ut purus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="split-section">
+        <div class="about-header">
+          <h2>WHO WE ARE</h2>
+          <img src="aboutus.svg" alt="About Us" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis nunc id ante laoreet laoreet at ut purus.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="card">
+            <h3>OUR MISSION</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
             </p>
-            <p class="status" id="admin-status" role="status"></p>
-          </form>
-
-          <form class="card" id="student-login" aria-label="Student login">
-            <h3>Student login</h3>
-            <label>
-              Username
-              <input type="text" name="login-username" required />
-            </label>
-            <label>
-              Password
-              <input type="password" name="login-password" required />
-            </label>
-            <button class="button primary" type="submit">Log in</button>
-            <p class="status" id="login-status" role="status"></p>
-          </form>
-        </div>
-      </section>
-
-      <section id="public-qa" class="section alt">
-        <div class="section-header">
-          <h2>Public Q&amp;A for new customers</h2>
-          <p>
-            Answers for prospective teams evaluating our industrial cybersecurity
-            training program.
-          </p>
-        </div>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Frequently asked questions</h3>
-            <div class="qa-item">
-              <p class="qa-question">What is the typical program length?</p>
-              <p class="qa-answer">
-                Most cohorts run 6-10 weeks with weekly live labs and guided
-                asynchronous work.
-              </p>
-            </div>
-            <div class="qa-item">
-              <p class="qa-question">Do you tailor labs to our equipment?</p>
-              <p class="qa-answer">
-                Yes. We align modules to your OT stack, safety requirements, and
-                incident scenarios.
-              </p>
-            </div>
-            <div class="qa-item">
-              <p class="qa-question">Can we include leadership briefings?</p>
-              <p class="qa-answer">
-                Each engagement includes executive-level readiness reporting and
-                improvement plans.
-              </p>
-            </div>
           </div>
-          <form class="card" aria-label="Public inquiry">
-            <h3>Ask a public question</h3>
-            <label>
-              Name
-              <input type="text" name="public-name" placeholder="Your name" />
-            </label>
-            <label>
-              Company
-              <input type="text" name="public-company" placeholder="Organization" />
-            </label>
-            <label>
-              Question
-              <textarea
-                name="public-question"
-                rows="5"
-                placeholder="How can we prepare our OT team for the program?"
-              ></textarea>
-            </label>
-            <button class="button primary" type="submit">Submit question</button>
-          </form>
-        </div>
-      </section>
-
-      <section id="portal" class="section student-only is-hidden">
-        <div class="section-header">
-          <h2>Student portal</h2>
-          <p>
-            Upload your proof of work, track your progress, and request instructor
-            feedback.
-          </p>
-        </div>
-        <div class="portal-grid">
-          <form class="card" aria-label="Upload proof of work">
-            <h3>Proof of work upload</h3>
-            <label>
-              Course module
-              <select name="module">
-                <option>Foundations of Industrial Security</option>
-                <option>Hands-on SOC for ICS</option>
-                <option>Red Teaming Industrial Systems</option>
-              </select>
-            </label>
-            <label>
-              Evidence description
-              <textarea
-                name="description"
-                rows="4"
-                placeholder="Summarize the lab results or evidence you are submitting."
-              ></textarea>
-            </label>
-            <label>
-              Upload file
-              <input type="file" name="proof" />
-            </label>
-            <button class="button primary" type="submit">Submit proof</button>
-          </form>
-
           <div class="card">
-            <h3>Progress snapshot</h3>
-            <ul class="progress-list">
-              <li>
-                <span>Completed labs</span>
-                <strong>12 / 18</strong>
-              </li>
-              <li>
-                <span>Pending reviews</span>
-                <strong>3</strong>
-              </li>
-              <li>
-                <span>Next live session</span>
-                <strong>Thursday, 14:00</strong>
-              </li>
-            </ul>
-            <div class="alert">
-              Upload a new proof-of-work file to unlock your next lab.
-            </div>
+            <h3>OUR VISION</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
           </div>
         </div>
-      </section>
-
-      <section id="qa" class="section student-only is-hidden">
-        <div class="section-header">
-          <h2>Instructor Q&amp;A</h2>
-          <p>
-            Ask questions in-context and get responses tied to the lab exercises.
-          </p>
-        </div>
-        <div class="card-grid">
-          <form class="card" aria-label="Submit a question">
-            <h3>Submit a question</h3>
-            <label>
-              Topic
-              <input type="text" name="topic" placeholder="Example: PLC traffic analysis" />
-            </label>
-            <label>
-              Question
-              <textarea
-                name="question"
-                rows="5"
-                placeholder="Type your question for the instructor."
-              ></textarea>
-            </label>
-            <button class="button primary" type="submit">Send question</button>
-          </form>
-          <div class="card">
-            <h3>Recent answers</h3>
-            <div class="qa-item">
-              <p class="qa-question">How do I validate network segmentation in the lab?</p>
-              <p class="qa-answer">
-                Use the provided OT firewall policy checklist and submit packet captures
-                showing allowed traffic only.
-              </p>
-            </div>
-            <div class="qa-item">
-              <p class="qa-question">What proof is required for the breach simulation?</p>
-              <p class="qa-answer">
-                Include your incident timeline, containment actions, and screenshots of
-                alerts triggered in the SIEM.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer">
-      <div>
-        <h3>Ready to train your team?</h3>
-        <p>Reach out to schedule on-site or virtual cohorts.</p>
       </div>
-      <div class="contact">
-        <p>Email: training@industrialcyber.example</p>
-        <p>Phone: +1 (555) 010-4200</p>
+    </section>
+
+    <section id="services">
+      <div class="split-section">
+        <div class="services-header">
+          <h2 class="services-title">WHAT WE OFFER</h2>
+          <img src="services.svg" alt="Services" class="services-image" />
+        </div>
+        <div class="services-cards">
+          <div class="service-card">
+            <h3 class="text-gold">COMPREHENSIVE SERVICES</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3 class="text-gold">CUSTOM SOLUTIONS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              quis nunc id ante laoreet laoreet at ut purus.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Salford & Co. All rights reserved.</p>
     </footer>
+
     <script>
-      const adminForm = document.querySelector("#admin-setup");
-      const adminStatus = document.querySelector("#admin-status");
-      const loginForm = document.querySelector("#student-login");
-      const loginStatus = document.querySelector("#login-status");
-      const studentOnlySections = document.querySelectorAll(".student-only");
+      function handleClientLogin(response) {
+        // Decode the JWT to get user info
+        const responsePayload = decodeJwtResponse(response.credential);
 
-      const updateVisibility = (isLoggedIn) => {
-        studentOnlySections.forEach((section) => {
-          section.classList.toggle("is-hidden", !isLoggedIn);
-        });
-      };
+        const feedback = document.getElementById("login-feedback");
+        feedback.textContent = `Welcome back, ${responsePayload.name}! Redirecting to dashboard...`;
 
-      const saveCredentials = (username, password) => {
-        localStorage.setItem("ict-username", username);
-        localStorage.setItem("ict-password", password);
-      };
+        console.log("Logged in user:", responsePayload);
+      }
 
-      const getStoredCredentials = () => {
-        return {
-          username: localStorage.getItem("ict-username") || "",
-          password: localStorage.getItem("ict-password") || "",
-        };
-      };
+      function decodeJwtResponse(token) {
+        var base64Url = token.split(".")[1];
+        var base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+        var jsonPayload = decodeURIComponent(
+          window
+            .atob(base64)
+            .split("")
+            .map(function (c) {
+              return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+            })
+            .join("")
+        );
 
-      adminForm?.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const formData = new FormData(adminForm);
-        const username = formData.get("admin-username").trim();
-        const password = formData.get("admin-password").trim();
+        return JSON.parse(jsonPayload);
+      }
 
-        if (!username || !password) {
-          adminStatus.textContent = "Please enter a username and password.";
-          adminStatus.classList.add("error");
-          return;
-        }
+      // Mobile menu toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
 
-        saveCredentials(username, password);
-        adminStatus.textContent = `Credentials saved for ${username}.`;
-        adminStatus.classList.remove("error");
-        adminForm.reset();
-      });
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            this.textContent = navLinks.classList.contains("active")
+              ? "✕"
+              : "☰";
+          });
 
-      loginForm?.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const formData = new FormData(loginForm);
-        const username = formData.get("login-username").trim();
-        const password = formData.get("login-password").trim();
-        const stored = getStoredCredentials();
-
-        if (username === stored.username && password === stored.password && username) {
-          loginStatus.textContent = "Login successful. Student portal unlocked.";
-          loginStatus.classList.remove("error");
-          updateVisibility(true);
-          loginForm.reset();
-        } else {
-          loginStatus.textContent = "Login failed. Check your credentials.";
-          loginStatus.classList.add("error");
+          // Close menu when clicking on a link
+          navLinks.addEventListener("click", function (e) {
+            if (e.target.tagName === "A") {
+              navLinks.classList.remove("active");
+              menuToggle.textContent = "☰";
+            }
+          });
         }
       });
-
-      updateVisibility(false);
     </script>
   </body>
 </html>
